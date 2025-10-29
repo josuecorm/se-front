@@ -20,17 +20,30 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Challenge
 
-To learn more about Next.js, take a look at the following resources:
+### Description
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Build a small React app where the user can type or paste text into a textarea and click a “Count Words” button to display word statistics.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The app should:
 
-## Deploy on Vercel
+- Count and display the total number of words in the text.
+- Count and display the number of unique words (case-insensitive, ignoring punctuation).
+- Display the top 3 most frequent words along with their counts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Example**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Input**: "Hello, hello. How are you? You look great, hello."
+
+**Output**:
+Total words: 9
+Unique words: 6 (hello, how, are, you, look, great)
+Top 3: hello (3 times), you (2 times), are (1 time)
+
+**Constraints**
+- Words are case-insensitive (“Hello” and “hello” are the same).
+- Ignore punctuation and special characters.
+- Empty input or input with only spaces/punctuation → 0 words.
+- Multiple words with the same frequency.
+
