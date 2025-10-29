@@ -28,22 +28,27 @@ Build a small React app where the user can type or paste text into a textarea an
 
 The app should:
 
-- Count and display the total number of words in the text.
-- Count and display the number of unique words (case-insensitive, ignoring punctuation).
-- Display the top 3 most frequent words along with their counts.
+- Count and display the **total number of words** in the text.
+- Count and display the **number of unique words** (case-insensitive, ignoring punctuation).
+- Display the **top 3 most frequent words** along with their counts.
 
 **Example**
 
-**Input**: "Hello, hello. How are you? You look great, hello."
+**Input**
+```
+"Hello, hello. How are you? You look great, hello."
+```
 
 **Output**:
+```
 Total words: 9
-Unique words: 6 (hello, how, are, you, look, great)
+Unique words: 6
 Top 3: hello (3 times), you (2 times), are (1 time)
+```
 
 **Constraints**
-- Words are case-insensitive (“Hello” and “hello” are the same).
-- Ignore punctuation and special characters.
+- Words are **case-insensitive** (“Hello” and “hello” are the same).
+- **Ignore punctuation and special characters**.
 - Empty input or input with only spaces/punctuation → 0 words.
 - Multiple words with the same frequency.
 
